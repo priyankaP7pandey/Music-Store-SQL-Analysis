@@ -1,51 +1,120 @@
+<div align="center">
+
 # 🎵 Music Store Data Analysis Using SQL
 
+**Uncovering sales, customer, and music trends from a digital music store database — one query at a time.**
+
+![SQL](https://img.shields.io/badge/SQL-PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
+![Tool](https://img.shields.io/badge/Tool-pgAdmin-2C5AA0?style=flat)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=flat)
+![License](https://img.shields.io/badge/License-MIT-blue?style=flat)
+
+</div>
+
+---
+
 ## 📌 Overview
-This project analyzes a digital music store database using SQL to uncover insights about sales performance, customer behavior, and music trends. The goal is to answer real-world business questions using structured queries — a common exercise for building and showcasing data analysis skills.
 
-## 🎯 Objectives
-- Explore and understand the structure of a music store database (customers, invoices, tracks, artists, albums, genres, employees).
-- Write SQL queries to answer specific business questions.
-- Derive actionable insights from sales and customer data.
+This project dives into a **digital music store database** using SQL to answer real-world business questions — the kind an analyst might be asked to solve for a growing e-commerce or media company. Using **PostgreSQL** and **pgAdmin**, I wrote queries ranging from simple lookups to multi-step analytical logic involving window functions, CTEs, and aggregations.
 
-## 🗃️ Dataset
-The dataset represents a digital music store and includes tables such as:
-- `customers`
-- `invoices` / `invoice_items`
-- `tracks`
-- `albums`
-- `artists`
-- `genres`
-- `employees`
+> 🎯 The goal: turn raw transactional data into insights a business could actually act on.
 
-## ❓ Business Questions Answered
-- Who are the top-spending customers?
-- What is the most popular genre and artist?
-- Which country generates the most revenue?
-- What is the average purchase/album price?
-- Which employee supports the most customers?
-- (Add/remove based on the queries you actually wrote)
+---
 
-## 🛠️ Tools Used
-- SQL (MySQL / PostgreSQL / SQLite — update based on what you used)
-- [DB Browser / MySQL Workbench / pgAdmin — update as applicable]
+## 🗂️ Database Schema
+
+The database models a music store with the following core tables:
+
+| Table | Description |
+|---|---|
+| `customer` | Customer details and contact info |
+| `invoice` | Purchase transactions |
+| `invoice_line` | Line items per invoice |
+| `track` | Individual songs/tracks |
+| `album` | Albums linked to artists |
+| `artist` | Artist details |
+| `genre` | Music genre classification |
+| `employee` | Staff who support customers |
+
+<details>
+<summary>📎 View Entity Relationship Diagram</summary>
+
+<!-- Add your ERD image here once exported from pgAdmin -->
+<!-- ![ERD](results/erd.png) -->
+
+*(Add a schema diagram here for a visual overview of table relationships)*
+
+</details>
+
+---
+
+## ❓ Business Questions & Insights
+
+Queries are organized by difficulty in [`queries.sql`](./queries.sql):
+
+### 🟢 Easy
+| # | Question |
+|---|---|
+| Q1 | Who is the senior-most employee based on job title? |
+| Q2 | Which countries have the most invoices? |
+| Q3 | What are the top 3 values of total invoice? |
+
+### 🟡 Moderate
+*(Add your moderate-level questions here, e.g. best-selling genres, top customers per country)*
+
+### 🔴 Advanced
+*(Add your advanced questions here, e.g. customers who spent the most per genre, using CTEs/window functions)*
+
+> 💡 **Tip:** Once you've run all your queries, replace this section with your actual key findings — e.g. *"Rock is the top-selling genre, generating 35% of total revenue."*
+
+---
+
+## 🛠️ Tools & Tech
+
+- **Database:** PostgreSQL
+- **Client:** pgAdmin 4
+- **Concepts used:** Joins, Aggregations, Subqueries, CTEs, Window Functions, GROUP BY / HAVING
+
+---
 
 ## 📂 Repository Structure
+
 ```
-├── schema.sql          # Database schema/table creation
-├── queries.sql         # All SQL analysis queries
-├── data/                # Dataset files (if included)
-└── README.md
+Music-Store-SQL-Analysis/
+├── Schema.sql        # Database schema (table structure)
+├── queries.sql        # All business-question SQL queries
+├── results/            # Query output screenshots / CSVs (optional)
+└── README.md          # You're here!
 ```
 
-## 📊 Key Insights
-- (Fill in 2–4 standout findings from your analysis, e.g. "Rock is the most popular genre, accounting for X% of total sales.")
+---
 
-## 🙌 Credits
-This project was built while following a tutorial by [Rishabh Mishra](https://www.youtube.com/@RishabhMishraOfficial) — [watch here](https://youtu.be/VFIuIjswMKM).
+## 🚀 How to Run This Project
 
-## 🚀 How to Run
-1. Clone this repository
-2. Import `schema.sql` into your SQL environment
-3. Load the dataset
-4. Run queries from `queries.sql` to reproduce the analysis
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/priyankaP7pandey/Music-Store-SQL-Analysis.git
+   ```
+2. **Set up the database** — create a new PostgreSQL database and run:
+   ```bash
+   psql -U your_username -d your_database -f Schema.sql
+   ```
+3. **Run the queries** — open `queries.sql` in pgAdmin's Query Tool and execute the queries you're interested in.
+
+---
+
+## 🙌 Acknowledgements
+
+This project was inspired by the excellent tutorial by **[Rishabh Mishra](https://www.youtube.com/@RishabhMishraOfficial)** — [watch it here](https://youtu.be/VFIuIjswMKM) 🎥
+
+---
+
+## 📬 Connect
+
+If you found this project useful or have suggestions, feel free to open an issue or connect with me!
+
+<div align="center">
+
+⭐ **If you like this project, consider giving it a star!** ⭐
+
+</div>
