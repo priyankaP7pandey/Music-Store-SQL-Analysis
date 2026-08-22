@@ -22,28 +22,10 @@ This project dives into a **digital music store database** using SQL to answer r
 
 ## 🗂️ Database Schema
 
-The database models a music store with the following core tables:
 
-| Table | Description |
-|---|---|
-| `customer` | Customer details and contact info |
-| `invoice` | Purchase transactions |
-| `invoice_line` | Line items per invoice |
-| `track` | Individual songs/tracks |
-| `album` | Albums linked to artists |
-| `artist` | Artist details |
-| `genre` | Music genre classification |
-| `employee` | Staff who support customers |
-
-<details>
-   
 ![Schema Diagram](ERD.png)
 
 
-
-</details>
-
----
 
 ## ❓ Business Questions & Insights
 
@@ -85,11 +67,8 @@ Return your list ordered alphabetically by email starting with A.
 
 
 ### 🔴 Advanced
-*(Add your advanced questions here, e.g. customers who spent the most per genre, using CTEs/window functions)*
 
-> 💡 **Tip:** Once you've run all your queries, replace this section with your actual key findings — e.g. *"Rock is the top-selling genre, generating 35% of total revenue."*
-
----
+  
 
 ## 🛠️ Tools & Tech
 
