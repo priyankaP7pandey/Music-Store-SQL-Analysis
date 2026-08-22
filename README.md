@@ -36,6 +36,7 @@ The database models a music store with the following core tables:
 | `employee` | Staff who support customers |
 
 <details>
+   
 ![Schema Diagram](ERD.png)
 
 
