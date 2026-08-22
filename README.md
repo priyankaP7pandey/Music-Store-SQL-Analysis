@@ -2,7 +2,7 @@
 
 # 🎵 Music Store Data Analysis Using SQL
 
-**Uncovering sales, customer, and music trends from a digital music store database — one query at a time.**
+**A PostgreSQL-based SQL analytics project that explores customer behavior, sales patterns, and music trends using real-world business questions.**
 
 ![SQL](https://img.shields.io/badge/SQL-PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
 ![Tool](https://img.shields.io/badge/Tool-pgAdmin-2C5AA0?style=flat)
@@ -104,6 +104,14 @@ Return your list ordered alphabetically by email starting with A.
 - **Concepts used:** Joins, Aggregations, Subqueries, CTEs, Window Functions, GROUP BY / HAVING
 
 ---
+
+##📌 Key Highlights
+
+    -8+ relational tables analyzed
+    -4 business-driven SQL problems
+    -Advanced queries using CTEs and aggregations
+    -Customer and sales behavior analysis
+    -PostgreSQL + pgAdmin
 
 ## 📂 Repository Structure
 
