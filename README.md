@@ -7,7 +7,6 @@
 ![SQL](https://img.shields.io/badge/SQL-PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
 ![Tool](https://img.shields.io/badge/Tool-pgAdmin-2C5AA0?style=flat)
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=flat)
-![License](https://img.shields.io/badge/License-MIT-blue?style=flat)
 
 </div>
 
@@ -37,12 +36,9 @@ The database models a music store with the following core tables:
 | `employee` | Staff who support customers |
 
 <details>
-<summary>📎 View Entity Relationship Diagram</summary>
+![Schema Diagram](ERD.png)
 
-<!-- Add your ERD image here once exported from pgAdmin -->
-<!-- ![ERD](results/erd.png) -->
 
-*(Add a schema diagram here for a visual overview of table relationships)*
 
 </details>
 
