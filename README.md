@@ -58,14 +58,15 @@ Queries are organized by difficulty in [`queries.sql`](./queries.sql):
          ORDER BY levels DESC
          LIMIT 1
 
-
  Q2 Which countries have the most invoices? 
 
-   
- Q3  What are the top 3 values of total invoice? |
+      SELECT COUNT(*) AS c, billing_country 
+      FROM invoice
+      GROUP BY billing_country
+      ORDER BY c DESC
+
 
 ### 🟡 Moderate
-*(Add your moderate-level questions here, e.g. best-selling genres, top customers per country)*
 
 ### 🔴 Advanced
 *(Add your advanced questions here, e.g. customers who spent the most per genre, using CTEs/window functions)*
